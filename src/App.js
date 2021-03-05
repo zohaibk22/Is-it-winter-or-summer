@@ -6,6 +6,7 @@ import "./App.css";
 import "./Components/SeasonDisplay/SeasonDisplay";
 
 import SeasonDisplay from "./Components/SeasonDisplay/SeasonDisplay";
+import Loader from "./Components/Loader/Loader";
 
 class App extends Component {
   // constructor(props) {
@@ -37,7 +38,7 @@ class App extends Component {
   //   console.log("My component was just updated- it rerendered");
   // }
 
-  render() {
+  renderContent() {
     if (this.state.lat) {
       return (
         <>
@@ -54,10 +55,17 @@ class App extends Component {
     } else {
       return (
         <>
-          <div className="App">Loading </div>
+          <div className="App">
+            <Loader message="Please Share Location" />
+          </div>
         </>
       );
     }
   }
+
+  render() {
+    return <div className="border red">{this.renderContent()}</div>;
+  }
 }
+
 export default App;
