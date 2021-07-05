@@ -1,17 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const Loader = (props) =>{
+type Props = {
+    message: string
+}
+
+const Loader = ({message}: Props) =>{
     return (
 
-        <>
+        <div>
             <div>
-                <div class="ui active dimmer">
-                    <div class="ui text loader">{props.message}</div>
+                <div className="ui active dimmer">
+                    <div className="ui text loader">{message}</div>
                 </div>
                 <p></p>
             </div>
-        </>
+        </div>
         
 
 
