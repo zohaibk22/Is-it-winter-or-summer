@@ -9,6 +9,10 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.23",
+<<<<<<< HEAD
+=======
+    "@types/node": "^16.0.0",
+>>>>>>> a4a18c8 (first commit)
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "react": "^17.0.1",

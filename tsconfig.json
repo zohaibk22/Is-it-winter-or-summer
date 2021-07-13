@@ -18,8 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+<<<<<<< HEAD
     "jsx": "react-jsx",
     "types": ["node"]
+=======
+    "jsx": "react-jsx"
+>>>>>>> a4a18c8 (first commit)
   },
   "include": [
     "src"
